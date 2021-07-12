@@ -135,19 +135,8 @@ public class CustomerService {
         other.setMoney(otherOneMoney);//注意：有问题不能创建
 
     }
-    //存款
-    private void doSaveMoney(){
-        //1.提示界面
-        System.out.println("请输入您的存款金额：");
-        //2.
-        Scanner scanner = new Scanner(System.in);
-        String moneyIn = scanner.nextLine();
-        Double moneyInInt = Double.valueOf(moneyIn);
-        double newMoney = currentCustomer.getMoney() + moneyInInt;
-        currentCustomer.setMoney(newMoney);
-    }
 
-  /*  //  存款
+  //  存款
    private void doSaveMoney() {
         System.out.println("请输入要存款的金额");
         // 输入存款金额
@@ -160,7 +149,7 @@ public class CustomerService {
             System.out.println("输入的金额不合法，请重新输入");
             doSaveMoney();
         }
-    }*/
+    }
     //退卡（）
     public void outCard() {
         System.out.println("当前用户已退出！");
